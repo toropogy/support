@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>応援ページ</title>
+</head>
+<body>
+  <h1 id="nickname">応援者：</h1>
+  <script>
+    const nickname = decodeURIComponent(location.pathname.split('/').pop());
+    document.getElementById("nickname").textContent = `応援者：${nickname}`;
+  </script>
+
+  <p>このページを表示するだけで支援になります！</p>
+  <!-- 広告タグをここに貼る（例：動画広告） -->
+</body>
+</html>
